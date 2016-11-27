@@ -1,3 +1,59 @@
 #main-toolbar #activity-button {
   background-image: url(../activity/activity-icon.svg);
 }
+
+#mainpanel {
+	background-color: #fff;
+	height: 80%;
+
+}
+
+#ctrlpanel {
+	background-color: #daeeff;
+	height: 20%;
+}
+
+#currentList {
+	background-color: #daeeff;
+	color: #025aa5;
+	font-size: 36px;
+}
+
+#points {
+	font-size: 36px;
+	color: #5cb85c;
+}
+
+#itemnum1, #itemnum2, #itemnum {
+	font-size: 18px;
+}
+
+#cardpic1, #cardpic2, #cardpic {
+    display: block;
+    margin: auto;
+}
+
+#engword{
+	font-size: 60px;
+}
+
+.triangle-left {
+	width: 0;
+	height: 0;
+	border-top: 50px solid transparent;
+	border-right: 100px solid #5bc0de;
+	border-bottom: 50px solid transparent;
+}
+
+.triangle-right {
+	width: 0;
+	height: 0;
+	border-top: 50px solid transparent;
+	border-left: 100px solid #5bc0de;
+	border-bottom: 50px solid transparent;
+}
+
+#ansArea{
+	font-size: 56px;
+	text-align: center;
+}

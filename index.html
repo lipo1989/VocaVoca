@@ -27,10 +27,81 @@
 <!-- The content of your activity goes inside the canvas -->
 <div id="canvas">
 
-  <!-- Replace this message with your own content -->
-  <h1>Congratulations!</h1>
-  <p>You are ready to develop this activity. Go ahead and edit the files.<br />
-    You can remove this message in the index.html.</p>
+  <!-- Upper control panel -->
+  <div class="container-fluid clearfix p-1" id="ctrlpanel">
+
+    <!-- Leftmost select of LISTs -->
+    <div class="btn-group float-xs-left">
+    <button id="currentList" type="button" class="btn btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    </button>
+    <div id="allLists" class="dropdown-menu">
+    </div>
+    </div>
+
+    <!-- Show total Points gained -->
+    <div class="float-xs-right ml-1 mt-1">
+      <span id="points"></span>
+    </div>
+
+    <!-- Second rightmost select of MODEs -->
+    <div id="modeBtn" class="btn-group float-xs-right mt-1" data-toggle="buttons">
+      <label class="btn btn-primary btn-lg active">
+        <input type="radio" name="modeOptions" value="learning" checked> Conozco
+      </label>
+      <label class="btn btn-primary btn-lg">
+        <input type="radio" name="modeOptions" value="testing"> Juego
+      </label>
+    </div>
+  
+  </div>
+
+
+  <!-- Lower main panel showing the card -->
+  <div class="container-fluid" id="mainpanel">
+
+    <!-- Learning panel, only shown in learning mode -->
+    <div id="learningPanel" style="display: none;">
+      
+      <div class="row p-2" style="height: 360px;">
+        <div class="col-md-1"><span id="itemnum1"></span></div>
+        <div class="col-md-7">
+          <img id="cardpic1" class="rounded" alt="" border="0" height="300" style="max-width: 480px;">
+        </div>
+        <div class="col-md-4">
+          <div id="engword"></div>
+          <img class="playWord" src="speak_icon.png" alt="" border="0" style="max-width: 50px;">
+        </div>
+      </div>
+
+      <div class="row clearfix p-1">
+        <div id="prevCard" class="triangle-left float-xs-left"></div>
+        <div id="nextCard" class="triangle-right float-xs-right"></div>
+      </div>
+    
+    </div>
+
+    <!-- Testing panel, only shown in testing mode -->
+    <div id="testingPanel" style="display: none;">
+      
+      <div class="row p-2" style="height: 360px;">
+        <div class="col-md-1"><span id="itemnum2"></span></div>
+        <div class="col-md-10">
+          <img id="cardpic2" class="rounded" alt="" border="0" height="300" style="max-width: 480px;">
+          <img class="playWord" src="speak_icon.png" alt="" border="0" height="200" style="max-width: 480px;">
+        </div>
+      </div>
+
+      <div class="row clearfix p-1">
+        <div class="input-group">
+          <div class="col-md-11" ><input type="text" id="ansArea" class="form-control" autofocus></div>
+          <span id="correctSign" class="tag tag-success" style="display: none;">V</span>
+          <span id="wrongSign" class="tag tag-danger" style="display: none;">X</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
 
 </div>
 </body>
