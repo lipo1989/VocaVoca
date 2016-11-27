@@ -5,4 +5,6 @@ requirejs.config({
     }
 });
 
+requirejs(["jquery.min"]);
+requirejs(["bootstrap/bootstrap.min"]);
 requirejs(["activity/activity"]);
