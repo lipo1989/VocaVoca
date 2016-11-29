@@ -4,8 +4,3 @@ Vocavoca is a project developed as an activity of the Sugar Learning Platform ut
 
 ## Vocabury Database
 You can contribute by expanding the vocabulary now we have. All the vocabulary are organized in different themes, for example animals, family, etc. And for every word we need a .jpg with size approximately 400*300 and .mp3 file. These are put in pics/ and audio/ folders respectively. Also database.js should be modified to register any newly added vocabulary.
-
-## Libraries Used
-1. Bootstray (http://getbootstrap.com/)
-2. JQuery
-
